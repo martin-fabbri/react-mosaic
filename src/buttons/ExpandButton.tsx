@@ -24,7 +24,7 @@ export class ExpandButton<T extends MosaicKey> extends React.PureComponent<Mosai
   context: MosaicWindowContext<T>;
 
   render() {
-    return createDefaultToolbarButton('Expand', 'pt-icon-maximize', this.expand);
+    return createDefaultToolbarButton('Expand', 'bp3-icon-maximize', this.expand);
   }
 
   private expand = () => {

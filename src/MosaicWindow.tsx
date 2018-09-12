@@ -87,7 +87,7 @@ export class InternalMosaicWindow<T extends MosaicKey> extends React.Component<
         </div>
         <div className="mosaic-window-body">
           <h4>{title}</h4>
-          <span className="pt-icon pt-icon-application" />
+          <span className="bp3-icon bp3-icon-application" />
         </div>
       </div>
     ),
@@ -187,12 +187,12 @@ export class InternalMosaicWindow<T extends MosaicKey> extends React.Component<
     return (
       <div className={classNames('mosaic-window-toolbar', { draggable: draggableAndNotRoot })}>
         {titleDiv}
-        <div className="mosaic-window-controls pt-button-group">
+        <div className="mosaic-window-controls bp3-button-group">
           {hasAdditionalControls && (
             <button
               onClick={() => this.setAdditionalControlsOpen(!additionalControlsOpen)}
-              className={classNames('pt-button pt-minimal pt-icon-more', {
-                'pt-active': additionalControlsOpen,
+              className={classNames('bp3-button bp3-minimal bp3-icon-more', {
+                'bp3-active': additionalControlsOpen,
               })}
             >
               <span className="control-text">{additionalControlButtonText!}</span>

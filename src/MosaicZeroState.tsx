@@ -32,14 +32,14 @@ export class MosaicZeroState<T extends MosaicKey> extends React.PureComponent<Mo
 
   render() {
     return (
-      <div className="mosaic-zero-state pt-non-ideal-state">
-        <div className="pt-non-ideal-state-visual pt-non-ideal-state-icon">
-          <span className="pt-icon pt-icon-applications" />
+      <div className="mosaic-zero-state bp3-non-ideal-state">
+        <div className="bp3-non-ideal-state-visual bp3-non-ideal-state-icon">
+          <span className="bp3-icon bp3-icon-applications" />
         </div>
-        <h4 className="pt-non-ideal-state-title">No Windows Present</h4>
-        <div className="pt-non-ideal-state-description">
+        <h4 className="bp3-non-ideal-state-title">No Windows Present</h4>
+        <div className="bp3-non-ideal-state-description">
           {this.props.createNode && (
-            <button className="pt-button pt-icon-add" onClick={this.replace}>
+            <button className="bp3-button bp3-icon-add" onClick={this.replace}>
               Add New Window
             </button>
           )}

@@ -24,7 +24,7 @@ export class RemoveButton<T extends MosaicKey> extends React.PureComponent<Mosai
   context: MosaicWindowContext<T>;
 
   render() {
-    return createDefaultToolbarButton('Close Window', 'pt-icon-cross', this.remove);
+    return createDefaultToolbarButton('Close Window', 'bp3-icon-cross', this.remove);
   }
 
   private remove = () => {

@@ -25,7 +25,7 @@ export class ReplaceButton<T extends MosaicKey> extends React.PureComponent<Mosa
   context: MosaicWindowContext<T>;
 
   render() {
-    return createDefaultToolbarButton('Replace Window', 'pt-icon-exchange', this.replace);
+    return createDefaultToolbarButton('Replace Window', 'bp3-icon-exchange', this.replace);
   }
 
   private replace = () => {

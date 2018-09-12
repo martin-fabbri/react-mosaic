@@ -14,7 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import '@blueprintjs/core/dist/blueprint.css';
+import '@blueprintjs/core/lib/css/blueprint.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 import * as _ from 'lodash';
 import * as React from 'react';
 import {
@@ -45,7 +46,7 @@ let windowCount = 3;
 
 export const THEMES = {
   ['Blueprint']: 'mosaic-blueprint-theme',
-  ['Blueprint Dark']: 'mosaic-blueprint-theme pt-dark',
+  ['Blueprint Dark']: 'mosaic-blueprint-theme bp3-dark',
   ['None']: '',
 };
 
@@ -155,19 +156,19 @@ export class ExampleApp extends React.PureComponent<{}, ExampleAppState> {
 
   private renderNavBar() {
     return (
-      <div className="pt-navbar pt-dark">
-        <div className="pt-navbar-group">
-          <div className="pt-logo" />
-          <div className="pt-navbar-heading">
-            <a className="pt-app-title" href="https://github.com/palantir/react-mosaic">
+      <div className="bp3-navbar bp3-dark">
+        <div className="bp3-navbar-group">
+          <div className="bp3-logo" />
+          <div className="bp3-navbar-heading">
+            <a className="bp3-app-title" href="https://github.com/palantir/react-mosaic">
               react-mosaic <span className="version">v{version}</span>
             </a>
           </div>
         </div>
-        <div className="pt-navbar-group pt-button-group">
-          <label className="pt-label pt-inline theme-selection">
+        <div className="bp3-navbar-group bp3-button-group">
+          <label className="bp3-label bp3-inline theme-selection">
             Theme:
-            <div className="pt-select">
+            <div className="bp3-select">
               <select
                 value={this.state.currentTheme}
                 onChange={(e) => this.setState({ currentTheme: e.currentTarget.value as Theme })}
@@ -178,10 +179,10 @@ export class ExampleApp extends React.PureComponent<{}, ExampleAppState> {
           </label>
           <div className="navbar-separator" />
           <span className="actions-label">Example Actions:</span>
-          <button className="pt-button pt-icon-grid-view" onClick={this.autoArrange}>
+          <button className="bp3-button bp3-icon-grid-view" onClick={this.autoArrange}>
             Auto Arrange
           </button>
-          <button className="pt-button pt-icon-arrow-top-right" onClick={this.addToTopRight}>
+          <button className="bp3-button bp3-icon-arrow-top-right" onClick={this.addToTopRight}>
             Add Window to Top Right
           </button>
           <a className="github-link" href="https://github.com/palantir/react-mosaic">
